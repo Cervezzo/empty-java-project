@@ -14,10 +14,10 @@ public class JavaApp {
     public static void main(String[] args) {
 
 
-        Persona p1 = new Persona("Paco", 200f);
+       /* Persona p1 = new Persona("Paco", 200f);
         Persona p2 = new Persona("Juan", 400f);
-            System.out.println();   //salto
-        System.out.println("Paco tenía inicialmente " + p1.getDinero());
+
+        System.out.println("\n Paco tenía inicialmente " + p1.getDinero());
         System.out.println("Juan tenía inicialmente " + p2.getDinero() + "\n");
 
         p1.pagar(p2, 20f);
@@ -25,7 +25,7 @@ public class JavaApp {
         System.out.println("\n" + p1.getNombre() + " ahora tiene " + p1.getDinero());
         System.out.println(p2.getNombre() + " ahora tiene " + p2.getDinero());
 
-
+*/
 
 
         /*"Ejercicio Par o Impar."
@@ -84,10 +84,16 @@ public class JavaApp {
 
           */
 
+        Punto p1 = new Punto(2, 4);
+        Punto p2 = new Punto(3, 5);
 
+        double distancia = p1.distancia(3,5);
+        System.out.println(distancia);
 
+        double pDestino = p2.distancia( 2, 4);
+        System.out.println(distancia);
 
-
+        System.out.println(p1);
       }
 
     }

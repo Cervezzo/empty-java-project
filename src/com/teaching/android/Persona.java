@@ -6,11 +6,12 @@ public class Persona {
     private String nombre;
     private float dinero;
 
-    //Métodos
+    //constructor
     public Persona(String nombre, float dinero){
         this.nombre = nombre;
         this.dinero = dinero;
     }
+    //métodos
     public void pagar(Persona p, float cantidad) {
         this.dinero = this.dinero + cantidad;
         p.dinero = p.dinero - cantidad;
