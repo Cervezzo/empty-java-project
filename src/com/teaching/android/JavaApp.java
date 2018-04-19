@@ -84,7 +84,7 @@ public class JavaApp {
 
           */
 
-        Punto p1 = new Punto(2, 4);
+      /*Punto p1 = new Punto(2, 4);
         Punto p2 = new Punto(3, 5);
 
         double distancia = p1.distancia(3,5);
@@ -94,6 +94,16 @@ public class JavaApp {
         System.out.println(distancia);
 
         System.out.println(p1);
+
+        */
+
+        Punto centro = new Punto(2, 4);
+        Circulo c1 = new Circulo(2, 4, 10);
+        Circulo c2 = new Circulo (centro, 10);
+
+        System.out.println("Area de c1: " + c1.getArea());
+        System.out.println("Area de c2: " + c2.getArea());
+
       }
 
     }
