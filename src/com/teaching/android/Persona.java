@@ -3,21 +3,24 @@ package com.teaching.android;
 public class Persona {
 
     //Atributos
-    private String Nombre;
-    private float Dinero;
+    private String nombre;
+    private float dinero;
 
     //Métodos
-    public Persona(String Nombre, float Dinero){
-        this.Nombre = Nombre;
-        this.Dinero = Dinero;
+    public Persona(String nombre, float dinero){
+        this.nombre = nombre;
+        this.dinero = dinero;
     }
     public void pagar(Persona p, float cantidad) {
-        this.Dinero = this.Dinero + cantidad;
-        p.Dinero = p.Dinero - cantidad;
+        this.dinero = this.dinero + cantidad;
+        p.dinero = p.dinero - cantidad;
+        System.out.println(p.nombre + " " + "ha pagado a " +  this.nombre + " la cantidad de: " + cantidad);
     }
-
+    public String getNombre(){
+        return nombre;
+    }
     public float getDinero() {
-        return Dinero;
+        return dinero;
     }
 }
 
