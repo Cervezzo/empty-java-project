@@ -1,5 +1,6 @@
 package com.teaching.android;
 
+// El comando '\n' crea un salto en pantalla, hay que escribirlo siempre entre comillas.
 
 import javax.swing.*;
 import java.util.Random;
@@ -12,18 +13,18 @@ public class JavaApp {
 
     public static void main(String[] args) {
 
-        /*
+
         Persona p1 = new Persona("Paco", 200f);
         Persona p2 = new Persona("Juan", 400f);
-            System.out.println();
+            System.out.println();   //salto
         System.out.println("Paco tenía inicialmente " + p1.getDinero());
-        System.out.println("Juan tenía inicialmente " + p2.getDinero());
+        System.out.println("Juan tenía inicialmente " + p2.getDinero() + "\n");
 
-            p1.pagar(p2, 20f);
-            System.out.println();
-        System.out.println("Paco ahora tiene " + p1.getDinero());
-        System.out.println("Juan ahora tiene " + p2.getDinero());
-        */
+        p1.pagar(p2, 20f);
+
+        System.out.println("\n" + p1.getNombre() + " ahora tiene " + p1.getDinero());
+        System.out.println(p2.getNombre() + " ahora tiene " + p2.getDinero());
+
 
 
 
@@ -72,9 +73,25 @@ public class JavaApp {
         */
 
 
+      /*Haz un programa que al introducir un número, una operación y otro número, realice el cálculo
+        y lo muestre por pantalla.*/
+
+
+      /*for (int numIn = 0; numIn <= 4; numIn += 1) {
+          Scanner keyboard = new Scanner(System.in);
+          System.out.println("Inserte su operación:");
+          float valor = keyboard.nextInt();
+
+          */
+
+
+
+
+
+      }
 
     }
-}
+
 
 
 
